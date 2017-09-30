@@ -1,2 +1,4 @@
 # luisamor.github.io
-Personal website
+Basic personal website
+
+Developed with [Middleman](https://middlemanapp.com/)  
