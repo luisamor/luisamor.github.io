@@ -1,0 +1,32 @@
+a {
+    color: rgba($prim-color, 0.9);
+    &:focus,
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+.social-icons {
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
+.social-icons--linkedin {
+    color: $linkedin-color;
+}
+
+.social-icons--twitter {
+    color: $twitter-color;
+}
+
+.social-icons--github {
+    color: $github-color;
+}
+
+.social-icons--stack-overflow {
+    color: $stack-overflow-color;
+}
+
+.social-icons--spotify {
+    color: $spotify-color;
+}

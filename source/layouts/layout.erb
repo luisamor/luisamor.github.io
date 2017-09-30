@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="Hi, I'm Luis Amor Alvarez a software developer based in Asturias, Spain." name='description'>
+    <meta content='Luis Amor' name='author'>
+
+    <meta content='summary' name='twitter:card'>
+    <meta content='@luiskywalker' name='twitter:site'>
+    <meta content='@luiskywalker' name='twitter:creator'>
+
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title><%= current_page.data.title || "Luis Amor Álvarez website" %></title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400">
+    <%= stylesheet_link_tag "site" %>
+    <%#= javascript_include_tag "site" %>
+  </head>
+  <body>
+    <%= yield %>
+  </body>
+</html>
