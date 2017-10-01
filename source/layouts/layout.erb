@@ -23,6 +23,9 @@
     <%= favicon_tag 'apple-touch-icon-72x72.png', :type => 'image/png', :sizes => '72x72', :rel => 'apple-touch-icon' %>
     <%= favicon_tag 'apple-touch-icon.png', :type => 'image/png', :rel => 'apple-touch-icon' %>
     <%= favicon_tag 'favicon.png', :type => 'image/png', :rel => 'shortcut icon' %> 
+    
+    <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" %>
+    <%= stylesheet_link_tag "site" %>
   </head>
   <body>
     <%= yield %>
@@ -35,7 +38,5 @@
       gtag('js', new Date());
       gtag('config', 'UA-107333609-1');
     </script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400">
-    <%= stylesheet_link_tag "site" %>
   </body>
 </html>
