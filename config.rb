@@ -70,7 +70,7 @@ configure :build do
         { icon: "apple-touch-icon-72x72.png",   size: "72x72" },                
         { icon: "favicon.ico", size: "64x64,32x32,16x16" },
         { icon: "favicon.png", size: "16x16" }
-      ]   
+      ]
     }
   end
 
