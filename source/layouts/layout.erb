@@ -11,9 +11,18 @@
     <meta content='@luiskywalker' name='twitter:site'>
     <meta content='@luiskywalker' name='twitter:creator'>
 
+    <meta name="theme-color" content="#0275d8" />
+
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "Luis Amor Álvarez website" %></title>    
+
     <%= javascript_include_tag "site", :defer => "defer" %>
+    
+    <%= favicon_tag 'apple-touch-icon-144x144.png', :type => 'image/png', :sizes => '144x144', :rel => 'apple-touch-icon' %>    
+    <%= favicon_tag 'apple-touch-icon-114x114.png', :type => 'image/png', :sizes => '114x114', :rel => 'apple-touch-icon' %>
+    <%= favicon_tag 'apple-touch-icon-72x72.png', :type => 'image/png', :sizes => '72x72', :rel => 'apple-touch-icon' %>
+    <%= favicon_tag 'apple-touch-icon.png', :type => 'image/png', :rel => 'apple-touch-icon' %>
+    <%= favicon_tag 'favicon.png', :type => 'image/png', :rel => 'shortcut icon' %> 
   </head>
   <body>
     <%= yield %>

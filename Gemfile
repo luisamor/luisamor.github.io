@@ -9,3 +9,4 @@ gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 gem 'builder'
 
 gem 'middleman-minify-html'
+gem "middleman-favicon-maker"

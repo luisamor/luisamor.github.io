@@ -58,7 +58,22 @@ configure :build do
   activate :minify_javascript
 
   # Enable cache buster
-  activate :asset_hash
+  activate :asset_hash 
+
+  activate :favicon_maker do |f|
+    f.template_dir  = 'source/assets/images'
+    f.output_dir  = 'source/assets/images'
+    f.icons = {
+      "_favicon_template.png" => [
+        { icon: "apple-touch-icon-144x144.png", size: "144x144" },
+        { icon: "apple-touch-icon-114x114.png", size: "114x114" },
+        { icon: "apple-touch-icon-72x72.png",   size: "72x72" },                
+        { icon: "favicon.ico", size: "64x64,32x32,16x16" },
+        { icon: "favicon.png", size: "16x16" }
+      ]   
+    }
+  end
+
 end
 
 activate :deploy do |deploy|
@@ -88,3 +103,4 @@ activate :minify_html do |html|
   html.simple_boolean_attributes  = true   # Use simple boolean attributes
   html.preserve_patterns          = nil    # Patterns to preserve
 end
+
