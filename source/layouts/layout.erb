@@ -27,9 +27,7 @@
   <body>
     <%= yield %>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400">
-    <%= stylesheet_link_tag "site" %>
-        <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script src="https://www.googletagmanager.com/gtag/js?id=UA-107333609-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -37,5 +35,7 @@
       gtag('js', new Date());
       gtag('config', 'UA-107333609-1');
     </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400">
+    <%= stylesheet_link_tag "site" %>
   </body>
 </html>
