@@ -12,13 +12,22 @@
     <meta content='@luiskywalker' name='twitter:creator'>
 
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Luis Amor Álvarez website" %></title>
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400">
-    <%= stylesheet_link_tag "site" %>
-    <%#= javascript_include_tag "site" %>
+    <title><%= current_page.data.title || "Luis Amor Álvarez website" %></title>    
+    <%= javascript_include_tag "site", :defer => "defer" %>
   </head>
   <body>
     <%= yield %>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400">
+    <%= stylesheet_link_tag "site" %>
+        <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script src="https://www.googletagmanager.com/gtag/js?id=UA-107333609-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-107333609-1');
+    </script>
   </body>
 </html>
